@@ -1,0 +1,2559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ESTILOS HEADER */
+
+nav {
+    z-index: 100000000;
+    position: fixed;
+    /* background: rgba(255, 255, 255, 1); */
+    height: 80px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgba(28, 27, 31, 1);
+
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #000090;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    nav {
+        height: 109px;
+    }
+
+    .logo {
+        position: absolute;
+        width: 83px;
+        height: 60.61px;
+        top: 32px;
+        left: 16px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+
+        z-index: 100000;
+        position: fixed;
+        width: 210px;
+        height: 352px;
+        top: 109px;
+        left: -100%;
+        /*  top:100px;
+        top: -150%; */
+        padding: 8px 0;
+        transition: all .5s;
+        background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #FFFBFE;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    nav ul li a {
+
+        width: 190px;
+        line-height: 40px;
+        font-family: 'Poppins', sans-serif;
+        color: #1C1B1F;
+
+        letter-spacing: 0.5px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background: none;
+        color: red;
+    }
+
+    #check:checked~ul {
+        /* top:109px; */
+        left: 0;
+    }
+
+    .navbarIcons {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 332px;
+        top: 50px;
+    }
+}
+
+/* ESTILOS CONTACT */
+
+.mainContact {
+    position: relative;
+    width: 100%;
+    height: 844px;
+    background: #FFFFFF;
+}
+
+.titleContact {
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+
+.titleContact .h1TitleContact {
+    position: absolute;
+    width: 116px;
+    height: 36px;
+    left: 137px;
+    top: 125px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.titleContact p {
+    position: absolute;
+    width: 226px;
+    height: 24px;
+    left: 83px;
+    top: 159px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.formularioContact {
+    /* left: 20px; */
+    position: absolute;
+    top: 271px;
+    height: 469px;
+}
+
+.formularioContact form div fieldset textarea {
+    height: 120px;
+    border: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #1C1B1F;
+    resize: none;
+}
+
+.formularioContact form div fieldset input {
+    border: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #1C1B1F;
+}
+
+.formularioContact form div fieldset legend {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+}
+
+
+
+
+
+
+.divDelButtonDelFormulario {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: -400px;
+}
+
+
+.buttonDelformulario1 {
+    background-color: #555555;
+    border-radius: 100px;
+
+}
+
+
+.divContactIformation {
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #FFAA88;
+}
+
+.pContactInformation {
+    padding: 14px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+/* .textAreaContact {
+    height: 150px;
+} */
+
+.divDelButtonDelFormulario {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: -400px;
+}
+
+.buttonDelformulario1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 105.86px;
+    height: 40px;
+    background: #FFAA88;
+    border-radius: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+/* ESTILOS HOW */
+
+.mainHow {
+    position: relative;
+    height: 844px;
+    display: flex;
+    align-items: center;
+    background-color: #FDF9F7;
+    overflow: hidden;
+    
+}
+
+.mainComoLoHacemostitle {
+    text-align: center;
+    position: absolute;
+    width: 249px;
+    height: 36px;
+    left: 70px;
+    top: 125px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+
+}
+
+.twitterVerifiedBadge {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 165px;
+    top: 193px;
+
+}
+
+.textosDehow {
+    position: absolute;
+    width: 359px;
+    height: 48px;
+    left: 15px;
+    top: 269px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.glutenImageshow {
+    position: absolute;
+    width: 62px;
+    height: 65px;
+    left: 163px;
+    top: 349px;
+
+}
+
+.textoDeHow1 {
+    position: absolute;
+    width: 359px;
+    height: 96px;
+    left: 15px;
+    top: 430px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+.casaDeGluten {
+    position: absolute;
+    width: 67.5px;
+    height: 60px;
+    left: 161px;
+    top: 558px;
+}
+
+.textoHow2 {
+    position: absolute;
+    width: 359px;
+    height: 48px;
+    left: 15px;
+    top: 634px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.divDelButtonDeHow {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 143px;
+height: 44px;
+left: 123px;
+top: 746px;
+
+background: #FFAA88;
+border-radius: 100px;
+border-width: 0;
+z-index: 100;
+}
+
+.divDelButtonDeHow a {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #FFFFFF;
+}
+
+.eclipseOrder {
+    position: absolute;
+    background-image: url(../images/eclipse_orange_order.png);
+    background-repeat: no-repeat;
+    bottom: 0;
+width: 641px;
+height: 130px;
+
+
+bottom:0;
+}
+/* ESTILOS PRODUCTS */
+
+.mainProduct {
+    position: relative;
+    width: 390px;
+    height: 1070px;
+    background: #FFFFFF;
+}
+
+.productMainH1 {
+    text-align: center;
+    position: absolute;
+    width: 126px;
+    height: 36px;
+    left: 132px;
+    top: 125px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.divContainerProductOne {
+    position: absolute;
+    width: 358px;
+    height: 188px;
+    left: 16px;
+    top: 193px;
+
+}
+
+.parrafoLoMasVendido {
+    position: absolute;
+    width: 143px;
+    height: 24px;
+    left: 32px;
+    top: 341px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.divContainerProductTwo {
+    position: absolute;
+    width: 358px;
+    height: 188px;
+    left: 16px;
+    top: 413px;
+}
+
+.parrafoCongelado {
+    position: absolute;
+    width: 98px;
+    height: 24px;
+    left: 32px;
+    top: 561px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.divContainerProductThree {
+    position: absolute;
+    width: 358px;
+    height: 188px;
+    left: 16px;
+    top: 633px;
+
+}
+
+.parrafoBakery {
+    position: absolute;
+    width: 54px;
+    height: 24px;
+    left: 32px;
+    top: 777px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.divContainerProductFour {
+    position: absolute;
+    width: 358px;
+    height: 188px;
+    left: 16px;
+
+    top: 853px;
+}
+
+.productAlmuerzos {
+    position: absolute;
+    width: 9px;
+    height: 24px;
+    left: 32px;
+    top: 997px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* ESTILOS INDEX */
+.firstSectionIndex {
+    position: relative;
+    height: 844px;
+    width: 100%;
+    background-image: url(../images/hero_image_index.png);
+    /*  left: 0px;
+    top: 109px; */
+
+}
+
+/* .titleTextIndex {
+    width: 398px;
+    height: 83px;
+    left: -1px;
+    top: 251px;
+} */
+
+.firstTitleIndex {
+    position: absolute;
+    width: 300px;
+    height: 51px;
+    left: 45px;
+    top: 251px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.textIndex {
+    position: absolute;
+    width: 398px;
+    height: 36px;
+    left: -1px;
+    top: 298px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.btnOrderIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 44px;
+    left: 123px;
+    top: 768px;
+    border-width: 0px;
+    background: #FFAA88;
+    border-radius: 100px;
+}
+
+.btnOrderIndex a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.secondSectionindex {
+    position: relative;
+    width: 100%;
+    height: 844px;
+    background: #FDF9F7;
+}
+
+.logoIndex {
+    position: absolute;
+    width: 106.81px;
+    height: 78px;
+    top: 32px;
+    left: 142px;
+}
+
+.secondTitleIndex {
+    position: absolute;
+    width: 358px;
+    height: 36px;
+    left: 16px;
+    top: 142px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+
+.iconGlutenFreeIndex {
+    position: absolute;
+    background: url(../images/imagenGlutenFree.png);
+    width: 60px;
+    height: 60px;
+    left: 165px;
+    top: 242px;
+    border-radius: 47px;
+}
+
+.textGlutenFreeIndex {
+    position: absolute;
+    width: 127px;
+    height: 24px;
+    left: 131px;
+    top: 318px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.iconCalidadIndex {
+    background: url(../images/icono_calidad_orange.png);
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: 165px;
+    top: 406px;
+}
+
+.textCalidadIndex {
+    position: absolute;
+    width: 296px;
+    height: 24px;
+    left: 47px;
+    top: 482px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.textSecondIndex {
+    position: absolute;
+    width: 359px;
+    height: 96px;
+    left: 15px;
+    top: 570px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.btnMoreIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 152px;
+    height: 44px;
+    left: 119px;
+    top: 754px;
+    background-color: rgba(255, 170, 136, 1);
+    border-radius: 100px;
+    border-width: 0px;
+}
+
+.btnMoreIndex a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.circle {
+    position: absolute;
+
+    top: 699px;
+}
+
+.thirdSectionIndex {
+    position: relative;
+    width: 100%;
+    height: 844px;
+    background: #FDF9F7;
+    overflow: hidden;
+}
+
+footer {
+    position: absolute;
+
+}
+
+
+.thirdSectionIndex .thirdTitleIndex {
+    position: absolute;
+    width: 358px;
+    height: 36px;
+    left: 16px;
+    top: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+
+/* .thirdSectionIndex ul li .imgCheesecake {
+    position:absolute;
+    background-image: url(../images/bg_gris_carousel.png);
+    left: 4.1%;
+    right: 52.05%;
+    top: 13.74%;
+    bottom: 67.3%;
+}
+
+.thirdSectionIndex ul li .imgMedallones {
+    position:absolute;
+    background-image: url(../images/bg_gris_carousel.png);
+    left: 52.05%;
+right: 4.1%;
+top: 13.74%;
+bottom: 67.3%;
+}
+
+.thirdSectionIndex ul li .imgSandwich {
+    position:absolute;
+    background-image: url(../images/bg_gris_carousel.png);
+    width: 171px;
+    height: 160px;
+
+} */
+
+.thirdSectionIndex .btnVerMasIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 116px;
+    height: 44px;
+    left: 137px;
+    top: 330px;
+    background: #FFAA88;
+    border-radius: 100px;
+    border-width: 0;
+}
+
+.thirdSectionIndex .btnVerMasIndex a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.fourthTitleIndex {
+    position: absolute;
+    width: 218px;
+    height: 36px;
+    left: 86px;
+    top: 407px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+/* .footerDiv {
+    position: relative;
+    
+} */
+
+.footerTitle {
+    position: absolute;
+    width: 114px;
+    height: 36px;
+    left: 138px;
+    bottom: 78px;
+    /* top: 730px; */
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.iconFacebook {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    bottom: 37px;
+    /* top: 783px; */
+}
+
+.iconInstagram {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 183px;
+    bottom: 37px;
+    /* top: 783px; */
+
+}
+
+.iconWhatsapp {
+
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 350px;
+    bottom: 37px;
+    /* top: 783px; */
+}
+
+/* Estilos Fist Carousel Index */
+/* Lista uno */
+.rectangleCarouselOne {
+    position: absolute;
+    bottom: 380px;
+}
+
+.thirdSectionIndex .slider {
+    
+    width: 100%;
+    z-index: 100;
+    padding-top: 116px;
+
+}
+
+.slider .listOne {
+    position: absolute;
+    
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 600%;
+}
+
+.slider .listOne li {
+    
+    padding-right: 5px;
+}
+
+.slider .listOne li img {
+    margin-left: -15px;
+    padding-right: 30px;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -130%;
+    }
+
+    /*
+     25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+      
+      50%{margin-left: -200%;}
+      70%{margin-left: -100%;}
+      
+      75%{margin-left: -300%;} */
+    /* 100%{margin-left: -300%;} */
+}
+
+/* @media only screen and (min-width:320px) and (max-width:768px){
+  .slider, .slider ul, .slider img{
+      height: 100vh;
+  }
+  }  */
+
+/* Lista dos */
+.slider .listTwo {
+    display: flex;
+    bottom: 530px;
+    left: -12px;
+    position: absolute;
+    animation: cambio 20s infinite alternate linear;
+    width: 600%;
+
+}
+
+.slider .listTwo li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    color: #2F2F2F;
+    width: 171px;
+    height: 15px;
+    margin-right: 18px;
+}
+
+/* Estilos Second Carousel Index */
+.rectangleCarouselTwo {
+    position: absolute;
+    top: 350px;
+}
+
+.secondSlider {
+    top: 490px;
+    left: -15px;
+    position: absolute;
+    width: 100%;
+    z-index: 300;
+}
+
+.secondSlider .listOne {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 600%;
+}
+
+
+.secondSlider .listOne li {
+    margin-right: 5px;
+}
+
+.secondSlider .listOne li img {
+    box-shadow: 1px 6px 5px -1px rgba(122, 115, 115, 0.82);
+    -webkit-box-shadow: 1px 6px 5px -1px rgba(122, 115, 115, 0.82);
+    -moz-box-shadow: 1px 6px 5px -1px rgba(122, 115, 115, 0.82);
+    margin-right: 15px;
+    border-radius: 7px;
+}
+
+/* .secondSlider .listTwo {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 600%;
+} */
+
+.secondSlider .listOne li div  {
+    animation: cambio 20s infinite alternate linear;
+    position: absolute;
+    bottom: 32px;
+    width: 158px;
+    height: 163px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #2F2F2F;
+}
+
+.secondSlider .listOne li .reviewOne {
+    left: 40px;
+}
+
+.secondSlider .listOne li .reviewTwo {
+    left: 230px;
+}
+.secondSlider .listOne li .reviewThree {
+    left: 420px;
+}
+.secondSlider .listOne li .reviewFour {
+    left: 610px;
+}
+.secondSlider .listOne li .reviewFive {
+    left: 800px;
+}
+.secondSlider .listOne li .reviewSix {
+    left: 990px;
+}
+
+.secondSlider .listOne li div p {
+    margin:1px;
+}
+.secondSlider .listOne li div .lastP {
+    position:absolute;
+    bottom: 0px;
+}
+
+/* ESTILOS ABOUT */
+
+.logoNavbarAbout {
+    position: absolute;
+    width: 106.81px;
+    height: 78px;
+    top: 48px;
+    left: 141px;
+}
+
+.navbarAbout {
+    height: 140px;
+}
+
+.listAbout {
+    top: 140px;
+}
+
+.firstSectionAbout {
+    position: relative;
+width: 390px;
+height: 844px;
+background: #FDF9F7;
+overflow: hidden;
+}
+
+.heroImageAbout {
+    position: absolute;
+    left: 4.1%;
+    right: 4.1%;
+    top: 22.51%;
+    bottom: 58.53%;
+    background: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    width: 358px;
+    height: 160px;
+    border-radius: 8px;
+
+}
+
+.diagonalDelAboutone {
+    position: absolute;
+    width: 917.48px;
+    height: 112.07px;
+    left: -206.11px;
+    top: 50px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+    border-radius: 26px;
+    transform: rotate(17.6deg);
+    color: #FFB3CE 36% #FFE3B3 36%;
+}
+
+.imgPanUno {
+    position: absolute;
+    z-index: 400;
+}
+
+.paragraphAbout {
+    position: absolute;
+    width: 358px;
+    height: 399px;
+    left: 16px;
+    top: 398px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.secondSectionAbout {
+    position: relative;
+    height: 844px;
+    width: 390px;
+    background: #FDF9F7;
+    overflow: hidden;
+}
+
+.titleMision {
+    position: absolute;
+    width: 82px;
+    height: 36px;
+    left: 154px;
+    top: 32px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.secondParagraphAbout {
+    position: absolute;
+    width: 355px;
+    height: 63px;
+    left: 19px;
+    top: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.imageMision {
+    position: absolute;
+    left: 4.1%;
+    right: 4.1%;
+    top: 23.1%;
+    bottom: 57.94%;
+    background: #D9D9D9;
+    border: 1px solid #D9D9D9;
+}
+
+.diagonalDelAboutTwo {
+    position: absolute;
+    width: 917.48px;
+height: 112.07px;
+left: -206.11px;
+top: 50px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+    border-radius: 26px;
+    transform: rotate(17.6deg);
+}
+
+.imgPanDos {
+    position: absolute;
+    z-index: 400;
+}
+
+.titleValores {
+    position: absolute;
+    width: 95px;
+    height: 36px;
+    left: 147px;
+    top: 387px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.listRow {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.listRow div img {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 486px;
+
+}
+
+.listRow .sectionQuality img {
+    left: 27px;
+
+}
+
+.listRow .sectionDiversity img {
+    left: 134px;
+}
+
+.listRow .sectionTeam img {
+    left: 236px;
+
+}
+
+.listRow .sectionService img {
+    left: 329px;
+
+}
+
+.listRow div h3 {
+    position: absolute;
+    height: 21px;
+    top: 526px;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+
+}
+
+.listRow .sectionQuality h3 {
+    width: 55px;
+    left: 16px;
+}
+
+.listRow .sectionDiversity h3 {
+    width: 74px;
+    left: 113px;
+}
+
+.listRow .sectionTeam h3 {
+    width: 47px;
+    left: 229px;
+}
+
+.listRow .sectionService h3 {
+    width: 54px;
+    left: 318px;
+}
+
+.thirdParagraphAbout {
+    position: absolute;
+    width: 355px;
+    height: 168px;
+    left: 19px;
+    top: 607px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.medialunaAbout {
+    position: absolute;
+    background-image: url(../images/eclipse_orange_index.png);
+    background-repeat: no-repeat;
+width: 641px;
+height: 50px;
+bottom:0;
+}
+
+/* ESTILOS ORDER */
+
+.firstSectionOrder {
+    height: 844px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    top: 109px;
+    left: 0;
+}
+
+.firstSectionOrder h1 {
+    position: absolute;
+    width: 212px;
+    height: 36px;
+    left: 89px;
+    top: 125px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.imagesOrder {
+    width: 150.86px;
+    height: 435px;
+    left: 120px;
+    top: 249px;
+}
+
+
+
+.imagesOrder .imageWhatsapp {
+    background-image: url(../images/icon_whatsapp_body.png);
+
+    position: absolute;
+    width: 64px;
+    height: 64.44px;
+    left: 163px;
+    top: 249px;
+}
+
+.imagesOrder .imagePedidosya {
+    background-image: url(../images/icon_pedidosya.png);
+    position: absolute;
+    width: 64px;
+    height: 64.44px;
+    left: 163px;
+    top: 434.28px;
+}
+
+.imagesOrder .imageRappi {
+    background-image: url(../images/icon_rappi.png);
+    position: absolute;
+    width: 150.86px;
+    height: 64.44px;
+    left: 120px;
+    top: 619.56px;
+}
+
+.secondSectionOrder {
+    position: relative;
+    width: 390px;
+    height: 844px;
+    background: #FFFFFF;
+}
+
+.sectionTakeAway {
+    position: absolute;
+    width: 390px;
+    height: 144px;
+    left: 0px;
+    top: 0px;
+
+    background: #D9D9D9;
+}
+
+.sectionTakeAway h2 {
+    position: absolute;
+    width: 136px;
+    height: 36px;
+    left: 127px;
+    top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.sectionTakeAway p {
+    position: absolute;
+    width: 74px;
+    height: 24px;
+    left: 158px;
+    top: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.iconLocation img {
+    position: absolute;
+    left: 44.1%;
+    right: 43.59%;
+    top: 20.85%;
+    bottom: 72.04%;
+}
+
+.imgLocationDot {
+    position: absolute;
+    left: 49.49%;
+    right: 48.97%;
+    top: 23.34%;
+    bottom: 75.95%;
+}
+
+
+.iconLocation p {
+    position: absolute;
+    width: 359px;
+    height: 48px;
+    left: 16px;
+    top: 252px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.iconLocation p {
+    position: absolute;
+    width: 359px;
+    height: 48px;
+    left: 16px;
+    top: 252px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.iconTime img {
+    position: absolute;
+    width: 48px;
+    height: 60px;
+    left: 172px;
+    top: 350px;
+}
+
+.iconTime div {
+    position: absolute;
+    width: 358px;
+    height: 48px;
+    left: 17px;
+    top: 426px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.iconDelivery img {
+    position: absolute;
+    width: 87px;
+    height: 51.41px;
+    left: 159px;
+    top: 595px;
+}
+
+.iconDelivery div {
+    position: absolute;
+    width: 358px;
+    height: 72px;
+    left: 20px;
+    top: 664px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.dividerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 163px;
+    height: 1px;
+    left: 0px;
+    top: 533px;
+}
+
+.lineDivider {
+    position: absolute;
+    width: 13px;
+    height: 24px;
+    left: 188px;
+    top: 522px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.dividerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 163px;
+    height: 1px;
+    left: 227px;
+    top: 533px;
+}
+
+.btnOrder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 158px;
+    height: 44px;
+    left: 116px;
+    top: 768px;
+
+    background: #FFAA88;
+    border-radius: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+
+/* PRODUCTOS */
+/* ESTILOS FAVS */
+
+.firstSectionFavs {
+    height: 844px;
+    width: 100%;
+    top: 109px;
+    left: 0;
+    background: #FFFFFF;
+}
+
+.titleFavs h1 {
+    position: absolute;
+    width: 220px;
+    height: 36px;
+    left: 85px;
+    top: 125px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.titleFavs img {
+    position: absolute;
+    left: 4.62%;
+    right: 3.59%;
+    top: 22.87%;
+    bottom: 54.86%;
+}
+
+.firstSectionFavs h2 {
+    position: absolute;
+    width: 111px;
+    height: 36px;
+    left: 141px;
+    top: 269px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.firstSectionFavs .listOne {
+    width: 359px;
+    height: 441px;
+}
+
+.firstSectionFavs .listOne div {
+    position: absolute;
+    width: 359px;
+    height: 75px;
+    left: 17px;
+    text-align: center;
+}
+
+.firstSectionFavs .listOne .divOne {
+    top: 422px;
+}
+
+.firstSectionFavs .listOne .divTwo {
+    top: 529px;
+}
+
+.firstSectionFavs .listOne .divThree {
+    top: 638px;
+}
+
+.firstSectionFavs .listOne .divFour {
+    top: 746px;
+}
+
+.firstSectionFavs .listOne h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+}
+
+.firstSectionFavs .listOne p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionFavs {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background: #FFFFFF;
+}
+
+.secondSectionFavs .listTwo {
+    width: 359px;
+    height: 395px;
+}
+
+.secondSectionFavs .listTwo div {
+    position: absolute;
+    width: 359px;
+    height: 75px;
+    left: 17px;
+    text-align: center;
+}
+
+.secondSectionFavs .listTwo .divOne {
+    top: 8px;
+}
+
+.secondSectionFavs .listTwo .divTwo {
+    top: 115px;
+}
+
+.secondSectionFavs .listTwo .divThree {
+    top: 222px;
+    height: 192px;
+    line-height: 24px;
+
+}
+
+.secondSectionFavs .listTwo h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+}
+
+.secondSectionFavs .listTwo p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionFavs .listTwo .divThree p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+}
+
+.secondSectionFavs button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 152px;
+    height: 44px;
+    left: 119px;
+    top: 462px;
+    background: #555555;
+    border-radius: 100px;
+
+}
+
+.secondSectionFavs button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+/* ESTILOS FROZEN */
+
+.firstSectionFrozen {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: #FFFFFF;
+}
+
+.firstSectionFrozen h1 {
+    position: absolute;
+    width: 150px;
+    height: 36px;
+    left: 120px;
+    top: 125px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.titleEmpanadas img {
+    position: absolute;
+    left: 4.62%;
+    right: 3.59%;
+    top: 22.87%;
+    bottom: 54.86%;
+}
+
+.titleEmpanadas h2 {
+    position: absolute;
+    width: 148px;
+    height: 36px;
+    left: 120px;
+    top: 269px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.firstSectionFrozen .divEmpanadas {
+    position: absolute;
+    width: 359px;
+    height: 264px;
+    left: 15px;
+    top: 414px;
+}
+
+.firstSectionFrozen .divEmpanadas p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.firstSectionFrozen button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 44px;
+    left: 124px;
+    top: 750px;
+    background: #555555;
+    border-radius: 100px;
+}
+
+.firstSectionFrozen button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.secondSectionFrozen {
+    position: relative;
+    width: 100%;
+    height: 844px;
+    background: #FFFFFF;
+}
+
+.titleRebozados img {
+    position: absolute;
+    left: 3.85%;
+    right: 4.36%;
+    top: 3.79%;
+    bottom: 73.93%;
+    background: #D9D9D9;
+}
+
+.titleRebozados h2 {
+    position: absolute;
+    width: 134px;
+    height: 36px;
+    left: 127px;
+    top: 108px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.secondSectionFrozen .divRebozados {
+    position: absolute;
+    width: 359px;
+    height: 184px;
+    left: 15px;
+    top: 364px;
+}
+
+.secondSectionFrozen .divRebozados p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionFrozen button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 40px;
+    left: 124px;
+    top: 692px;
+    background: #555555;
+    border-radius: 100px;
+}
+
+.secondSectionFrozen button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.thirdSectionFrozen {
+    position: relative;
+    width: 100%;
+    height: 844px;
+    background: #FFFFFF;
+}
+
+.titlePrepizza img {
+    position: absolute;
+    left: 3.85%;
+    right: 4.36%;
+    top: 3.79%;
+    bottom: 73.93%;
+
+    background: #D9D9D9;
+}
+
+.titlePrepizza h2 {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    left: 145px;
+    top: 108px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.thirdSectionFrozen .divPrepizza {
+    position: absolute;
+    width: 359px;
+    height: 64px;
+    left: 15px;
+    top: 424px;
+}
+
+.thirdSectionFrozen .divPrepizza p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.thirdSectionFrozen button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 44px;
+    left: 124px;
+    top: 692px;
+    background: #555555;
+    border-radius: 100px;
+}
+
+.thirdSectionFrozen button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+/* ESTILOS LUNCH */
+
+.firstSectionLunch {
+    position: relative;
+    width: 100%;
+    height: 844px;
+    background: #FFFFFF;
+}
+
+.firstSectionLunch h1 {
+    position: absolute;
+    width: 132px;
+    height: 36px;
+    left: 129px;
+    top: 125px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.firstSectionLunch .titleSandwiches img {
+    position: absolute;
+    left: 3.85%;
+    right: 4.36%;
+    top: 22.87%;
+    bottom: 54.86%;
+}
+
+.firstSectionLunch .titleSandwiches h2 {
+    position: absolute;
+    width: 147px;
+    height: 36px;
+    left: 121px;
+    top: 269px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.firstSectionLunch .listOne div {
+    position: absolute;
+    width: 359px;
+    height: 75px;
+    left: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.firstSectionLunch .listOne .divOne {
+    top: 414px;
+}
+
+.firstSectionLunch .listOne .divTwo {
+    top: 539px;
+}
+
+.firstSectionLunch .listOne .divThree {
+    top: 664px;
+}
+
+.firstSectionLunch .listOne div h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.firstSectionLunch .listOne div p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.firstSectionLunch button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 44px;
+    left: 124px;
+    top: 771px;
+    background: #555555;
+    border-radius: 100px;
+}
+
+.firstSectionLunch button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.secondSectionLunch {
+    position: relative;
+    width: 100%;
+    height: 844px;
+    background: #FFFFFF;
+}
+
+.secondSectionLunch .titleWraps img {
+    position: absolute;
+    left: 3.85%;
+    right: 4.36%;
+    top: 3.79%;
+    bottom: 73.93%;
+}
+
+.secondSectionLunch .titleWraps h2 {
+    position: absolute;
+    width: 79px;
+    height: 36px;
+    left: 155px;
+    top: 108px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.secondSectionLunch .listTwo div {
+    position: absolute;
+    width: 359px;
+    height: 75px;
+    left: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionLunch .listTwo .divOne {
+    top: 364px;
+}
+
+.secondSectionLunch .listTwo .divTwo {
+    top: 471px;
+}
+
+.secondSectionLunch .listTwo div h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.secondSectionLunch .listTwo div p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.secondSectionLunch button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 40px;
+    left: 124px;
+    top: 692px;
+    background: #555555;
+    border-radius: 100px;
+}
+
+.secondSectionLunch button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.thirdSectionLunch {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: #FFFFFF;
+}
+
+.thirdSectionLunch .titleEnsaladas img {
+    position: absolute;
+    left: 3.85%;
+    right: 4.36%;
+    top: 3.79%;
+    bottom: 73.93%;
+    background: #D9D9D9;
+    border: 1px solid #D9D9D9;
+}
+
+.thirdSectionLunch .titleEnsaladas h2 {
+    position: absolute;
+    width: 126px;
+    height: 36px;
+    left: 131px;
+    top: 108px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.thirdSectionLunch .listThree div {
+    position: absolute;
+    width: 359px;
+    left: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.thirdSectionLunch .listThree .divOne {
+    height: 75px;
+    top: 252px;
+}
+
+.thirdSectionLunch .listThree .divTwo {
+    height: 75px;
+    top: 359px;
+}
+
+.thirdSectionLunch .listThree .divThree {
+    height: 75px;
+    top: 466px;
+}
+
+.thirdSectionLunch .listThree .divFour {
+    height: 93px;
+    top: 573px;
+}
+
+.thirdSectionLunch .listThree .divFive {
+    height: 75px;
+    top: 698px;
+}
+
+.thirdSectionLunch .listThree .divSix {
+    height: 75px;
+    top: 805px;
+}
+
+.thirdSectionLunch .listThree div h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.thirdSectionLunch .listThree div p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.thirdSectionLunch button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: relative;
+    width: 143px;
+    height: 44px;
+    left: 124px;
+    top: 929px;
+    background: #555555;
+    border-radius: 100px;
+}
+
+.thirdSectionLunch button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+/* ESTILOS BAKERY */
+
+.firstSectionBakery {
+    position: relative;
+    width: 100%;
+    height: 844px;
+    background: #FFFFFF;
+}
+
+.firstSectionBakery h1 {
+    position: absolute;
+    width: 88px;
+    height: 36px;
+    left: 151px;
+    top: 125px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.firstSectionBakery .titlePanaderia img {
+    position: absolute;
+    left: 3.85%;
+    right: 4.36%;
+    top: 22.87%;
+    bottom: 54.86%;
+}
+
+.firstSectionBakery .titlePanaderia h2 {
+    position: absolute;
+    width: 126px;
+    height: 36px;
+    left: 131px;
+    top: 269px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.firstSectionBakery .divPanaderia {
+    position: absolute;
+    width: 359px;
+    height: 304px;
+    left: 16px;
+    top: 414px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.firstSectionBakery button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 44px;
+    left: 124px;
+    top: 750px;
+    background: #555555;
+    border-radius: 100px;
+}
+
+.firstSectionBakery button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.secondSectionBakery {
+    position: relative;
+    width: 100%;
+    height: 844px;
+    background: #FFFFFF;
+}
+
+.secondSectionBakery .titleTortas img {
+    position: absolute;
+    left: 3.85%;
+    right: 4.36%;
+    top: 3.79%;
+    bottom: 73.93%;
+}
+
+.secondSectionBakery .titleTortas h2 {
+    position: absolute;
+    width: 77px;
+    height: 36px;
+    left: 156px;
+    top: 108px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.secondSectionBakery .listOne div {
+    position: absolute;
+    width: 359px;
+    left: 14px;
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+}
+
+.secondSectionBakery .listOne .divOne {
+    height: 75px;
+    top: 252px;
+}
+
+.secondSectionBakery .listOne .divTwo {
+    height: 75px;
+    top: 359px;
+}
+
+.secondSectionBakery .listOne .divThree {
+    height: 93px;
+    top: 466px;
+}
+
+.secondSectionBakery .listOne .divFour {
+    height: 75px;
+    top: 591px;
+}
+
+.secondSectionBakery .listOne .divFive {
+    height: 93px;
+    top: 698px;
+}
+
+.secondSectionBakery .listOne div h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.secondSectionBakery .listOne div p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.secondSectionBakery button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 40px;
+    left: 124px;
+    top: 839px;
+    background: #555555;
+    border-radius: 100px;
+}
+
+.secondSectionBakery button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
